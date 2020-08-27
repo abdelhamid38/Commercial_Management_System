@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="paneprimiter" prefHeight="700.0" prefWidth="1281.0" style="-fx-background-color: #07527E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.ConsultadminController">
+   <children>
+      <JFXTabPane layoutX="473.0" layoutY="198.0" prefHeight="700.0" prefWidth="1251.0" stylesheets="@../craw_window%20-%20Copy%20(2).css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="consulter les produits">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1284.0">
+                     <children>
+                        <TableView fx:id="table" prefHeight="673.0" prefWidth="1281.0" stylesheets="@../craw_window%20-%20Copy.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="ID" prefWidth="120.0" text="ID" />
+                              <TableColumn fx:id="nom_de_produit" minWidth="0.0" prefWidth="230.0" text="Nom de produit" />
+                              <TableColumn fx:id="nom_de_forniseur" minWidth="0.0" prefWidth="230.0" text="Nom de forniseur" />
+                              <TableColumn fx:id="prix_de_produit" minWidth="0.0" prefWidth="230.0" text="Prix de produit" />
+                              <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="230.0" text="Quantity" />
+                              <TableColumn fx:id="date" minWidth="0.0" prefWidth="224.0" text="Date" />
+                           </columns>
+                        </TableView>
+                        <Pane layoutY="475.0" prefHeight="90.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="consulter les forniseur">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1321.0">
+                     <children>
+                        <TableView fx:id="table2" fixedCellSize="0.0" prefHeight="700.0" prefWidth="1281.0" stylesheets="@../craw_window%20-%20Copy.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="idf" minWidth="100.0" prefWidth="92.0" text="ID" />
+                              <TableColumn fx:id="nom_de_forniseurs" minWidth="0.0" prefWidth="280.0" text="nom de forniseur" />
+                              <TableColumn fx:id="prenom_de_forniseur" minWidth="0.0" prefWidth="280.0" text="prenom de forniseur" />
+                              <TableColumn fx:id="nom_de_produits" minWidth="0.0" prefWidth="280.0" text="nom de produit" />
+                              <TableColumn fx:id="ntlf" minWidth="0.0" prefWidth="165.0" text="n:° Tlf" />
+                              <TableColumn fx:id="datef" minWidth="0.0" prefWidth="165.0" text="Date" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Pane layoutX="1395.0" prefHeight="246.0" prefWidth="39.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXHamburger fx:id="hamp" layoutX="5.0" layoutY="14.0" />
+         </children>
+      </Pane>
+      <JFXDrawer fx:id="slider1" defaultDrawerSize="230.0" layoutY="27.0" prefHeight="673.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="27.0" />
+   </children>
+</AnchorPane>
